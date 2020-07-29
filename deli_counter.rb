@@ -13,5 +13,5 @@ end
 
 def take_a_number(deli, new_name)
   deli << new_name
-  puts "Welcome, #{new_name}. You are number #{deli.index + 1} in line."
+  puts "Welcome, #{new_name}. You are number #{deli.index[new_name] + 1} in line."
 end
