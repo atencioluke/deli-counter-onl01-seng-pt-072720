@@ -15,3 +15,13 @@ def take_a_number(deli, new_name)
   deli << new_name
   puts "Welcome, #{new_name}. You are number #{deli.index(new_name) + 1} in line."
 end
+
+
+def now_serving(deli)
+  if deli.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{deli[0]}."
+    deli.shift
+  end
+end
